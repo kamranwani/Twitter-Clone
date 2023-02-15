@@ -47,14 +47,20 @@
               <input type="password" class="password" placeholder="Password" />
               <label>Forgot Password?</label>
             </div>
-            <button type="button" class="btn-top">Log in</button>
+            <button type="button" class="btn-top" onclick="handleLogIn()">
+              Log in
+            </button>
           </form>
           <div class="middle-content">
             <i class="fas fa-dove"></i>
             <h1>explore what's happening in the world</h1>
             <h4>Join Twirrer today</h4>
-            <button type="button" class="sign-up">Sign Up</button>
-            <button type="button" class="log-in">Log In</button>
+            <button type="button" class="sign-up" onclick="displayLogInPage()">
+              Sign Up
+            </button>
+            <button type="button" class="log-in" onclick="displayLogInPage()">
+              Log In
+            </button>
           </div>
         </div>
       </div>
@@ -119,6 +125,16 @@
       <!-- end of login section  -->
     </section>
     <!-- End of Login Page  -->
+
+    <!-- login page modal box  -->
+    <div class="login-modal">
+      <i class="fas fa-times close-login-modal"></i>
+      <p>
+        The username and password you entered did not match our records. Please
+        double check and try again
+      </p>
+    </div>
+    <!-- end of login page modal box  -->
 
     <!-- News Add Page  -->
     <section class="feeds-page">
@@ -300,5 +316,6 @@
       </button>
     </section>
     <!-- End of News Add Page  -->
+    <script src="./script.js"></script>
   </body>
 </html>
